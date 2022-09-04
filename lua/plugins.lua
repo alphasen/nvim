@@ -117,6 +117,14 @@ return require('packer').startup({
     use { 'NvChad/nvim-colorizer.lua', config = "require('plugins.colorizer')" }
     use { 'L3MON4D3/LuaSnip', requires = { 'rafamadriz/friendly-snippets' }, after = 'cmp_luasnip' }
 
+    -- Colorscheme
+    use {
+      "dracula/vim",
+      config = function()
+        vim.cmd "colorscheme dracula"
+      end,
+    }
+
     -- Git
     use { 'lewis6991/gitsigns.nvim',
       requires = { 'nvim-lua/plenary.nvim' },

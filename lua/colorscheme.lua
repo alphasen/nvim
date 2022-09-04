@@ -15,7 +15,7 @@ vim.g.tokyonight_colors = {
 -- ╭──────────────────────────────────────────────────────────╮
 -- │ Setup Colorscheme                                        │
 -- ╰──────────────────────────────────────────────────────────╯
-vim.cmd('colorscheme ' .. EcoVim.colorscheme)
+-- vim.cmd('colorscheme ' .. EcoVim.colorscheme)
 
 -- IF NIGHTLY
 if vim.fn.has("nvim-0.8") then
@@ -86,7 +86,7 @@ if vim.fn.has("nvim-0.8") then
     end
   end
 
--- ELSE
+  -- ELSE
 else
   -- Ecovim Colors
   vim.highlight.create('EcovimPrimary', { guifg = "#488DFF" }, false);
